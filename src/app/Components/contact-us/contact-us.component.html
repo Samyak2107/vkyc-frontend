@@ -1,0 +1,122 @@
+<div
+  class="container d-flex justify-content-evenly align-items-center"
+  style="margin-top: 100px"
+>
+  <div class="contact-left">
+    <h1 class="fw-bold fs-1 mb-4">Get in touch<br />with us</h1>
+    <p>We will get back to you as soon as possible.</p>
+  </div>
+  <div class="contact-right">
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-2">
+        <mat-form-field class="contact-input">
+          <mat-label for="fullName">Full name</mat-label>
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            [(ngModel)]="fullName"
+            matInput
+            placeholder="Ex. John Doe"
+            value=""
+          />
+        </mat-form-field>
+      </div>
+      <div class="mb-2">
+        <mat-form-field class="contact-input">
+          <mat-label>Email Address</mat-label>
+          <input
+            type="text"
+            name="emailAddress"
+            id="emailAddress"
+            [(ngModel)]="emailAddress"
+            matInput
+            placeholder="Ex. john@doe.com"
+            value=""
+          />
+        </mat-form-field>
+      </div>
+      <div class="mb-2">
+        <mat-form-field class="contact-input">
+          <mat-label>Mobile</mat-label>
+          <input
+            type="text"
+            name="mobile"
+            id="mobile"
+            [(ngModel)]="mobile"
+            matInput
+            placeholder="Ex. 9999999999"
+            value=""
+          />
+        </mat-form-field>
+      </div>
+      <div class="mb-2">
+        <mat-form-field class="contact-input">
+          <mat-label>Company name</mat-label>
+          <input
+            type="text"
+            name="companyName"
+            id="companyName"
+            [(ngModel)]="companyName"
+            matInput
+            placeholder="Ex. Reliance"
+            value=""
+          />
+        </mat-form-field>
+      </div>
+      <div class="mb-2 d-flex justify-content-between">
+        <mat-form-field class="contact-input-country">
+          <mat-label>Country</mat-label>
+          <input
+            type="text"
+            name="country"
+            id="country"
+            [(ngModel)]="country"
+            matInput
+            placeholder="Ex. India"
+            value=""
+          />
+        </mat-form-field>
+        <mat-form-field class="contact-input-city">
+          <mat-label>City</mat-label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            [(ngModel)]="city"
+            matInput
+            placeholder="Ex. Mumbai"
+            value=""
+          />
+        </mat-form-field>
+      </div>
+      <div class="mb-2">
+        <mat-form-field class="contact-input">
+          <mat-label>How did you hear about us ?</mat-label>
+          <input
+            type="text"
+            name="reference"
+            id="reference"
+            [(ngModel)]="reference"
+            matInput
+            value=""
+          />
+        </mat-form-field>
+      </div>
+      <div class="mb-2">
+        <mat-form-field class="contact-input">
+          <mat-label>Message</mat-label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            [(ngModel)]="message"
+            matInput
+            placeholder="Ex. Corporate integration"
+          ></textarea>
+        </mat-form-field>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
